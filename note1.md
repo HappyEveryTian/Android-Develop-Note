@@ -4,11 +4,11 @@
 
 ### 1.1 Activity概念
 
-    Activity 是一个可视化的用户界面，负责创建一个屏幕窗口，放置 UI 组件，供用户交互。
+Activity 是一个可视化的用户界面，负责创建一个屏幕窗口，放置 UI 组件，供用户交互。
 
 ### 1.2 Activity创建
 
-    右击包名——New——Activity——Empty Activity，会看到类似于下面的界面，输入Activity和布局的名字，☑️Generate a Layout 后，Android系统会自动为我们创建布局，且在AndroidManifest.xml文件中自动注册当前Activity。
+右击包名——New——Activity——Empty Activity，会看到类似于下面的界面，输入Activity和布局的名字，☑️Generate a Layout 后，Android系统会自动为我们创建布局，且在AndroidManifest.xml文件中自动注册当前Activity。
 
 ![activity](/image_day_1/activity.png)
 
@@ -44,7 +44,7 @@
 
 ### 1.5 Intent
 
-    Intent是Activity，Service和BroadcastReceiver这三个应用组件之间进行通信的信使。
+Intent是Activity，Service和BroadcastReceiver这三个应用组件之间进行通信的信使。
 
 1. 显式Intent
 
@@ -120,15 +120,15 @@ Android 系统会在与服务的连接意外中断时（例如当服务崩溃或
 
 ### 3.1 BroadcastReceiver介绍
 
-    BroadcastReceiver（广播接收器）是一种用于接收和相应广播消息的组件。广播消息可以由系统、应用程序或其他组件发送，而BroadcastReceiver负责接收并处理这些消息。
+BroadcastReceiver（广播接收器）是一种用于接收和相应广播消息的组件。广播消息可以由系统、应用程序或其他组件发送，而BroadcastReceiver负责接收并处理这些消息。
 
 ### 3.2 BroadcastReceiver注册方式
 
-    广播接收器使用分为两部分:
+广播接收器使用分为两部分:
 
-    1. 注册广播接收器:在 AndroidManifest.xm 文件中声明广播接收器，或者通过代码动态注册广播接收器。这样系统或其他应用程序发送匹配的广播时，广播接收器就会被激活。
+1. 注册广播接收器:在 AndroidManifest.xm 文件中声明广播接收器，或者通过代码动态注册广播接收器。这样系统或其他应用程序发送匹配的广播时，广播接收器就会被激活。
 
-    2. 处理广播:广播接收器在接收到广播时，会调用其onReceive(Context context,Intentintent)方法。在这个方法中，可以处理接收到的广播，例如读取广播中的数据、执行特定操作或触发其他组件的响应。
+2. 处理广播:广播接收器在接收到广播时，会调用其onReceive(Context context,Intentintent)方法。在这个方法中，可以处理接收到的广播，例如读取广播中的数据、执行特定操作或触发其他组件的响应。
 
 ### 3.3 BroadcastReceiver使用
 
@@ -170,22 +170,22 @@ Android 系统会在与服务的连接意外中断时（例如当服务崩溃或
 
 ### 4.1 ContentProvider简介
 
-    Content Provider(内容提供者)是一种用于管理应用程序数据的组件。ContentProvider允许应用程序共享数据给其他应用程序，并提供了一种标准化的接口，用于对数据进行查询、插入、更新和删除等
+Content Provider(内容提供者)是一种用于管理应用程序数据的组件。ContentProvider允许应用程序共享数据给其他应用程序，并提供了一种标准化的接口，用于对数据进行查询、插入、更新和删除等
     操作。
 
 ### 4.2 Uri介绍
 
-    通用资源标志符（Universal Resource Identifier，简称"URI"）。
+- 通用资源标志符（Universal Resource Identifier，简称"URI"）。
 
-    Uri代表要操作的数据，Android上可用的每种资源、图像、视频片段等都可以用Uri来表示。
+- Uri代表要操作的数据，Android上可用的每种资源、图像、视频片段等都可以用Uri来表示。
     
-    从概念上来讲，URI包括URL。
+- 从概念上来讲，URI包括URL。
 
 ### 4.3 Uri组成
 
-    URI主要分三个部分：scheme，authority 和 path。
+- URI主要分三个部分：scheme，authority 和 path。
 
-    其中authority又分为host和port。格式如下sheme://host:port/path
+- 其中authority又分为host和port。格式如下sheme://host:port/path
 
 ![uri组成](/image_day_1/uri.png)
 
