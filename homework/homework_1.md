@@ -36,11 +36,11 @@
 
 ## 2.3 总结
 - startService：
-- 
+  
 可以多次调用，但是onCreate()只执行一遍，也就是Service只会创建一次，每次调用onStartCommand都会被调用。该方式Service的生命周期为onCreate() -> onStartCommand()->onDestroy()。
 
 - bindService:
-- 
+
 只有第一次调用会创建Service,执行onCreate()和onBind()，连续多次调用并不会执行onCreate()和onBind()；生命周期为onCreate()->onBind()->onUnBind()->onDestroy()。
 
 # 3. 广播
