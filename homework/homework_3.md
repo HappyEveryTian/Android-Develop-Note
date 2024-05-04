@@ -110,6 +110,7 @@ public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 }
 ```
 ### 截图
+
 ![start](/homework/asset/homeworkImage_3/start.png)
 
 # 2. 实现增加删除列表项功能
@@ -163,7 +164,9 @@ public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 ### 截图
 
 1. 在指定的索引处增加列表项功能
+
 ![add](/homework/asset/homeworkImage_3/add.png)
 
 2. 在指定的所引出删除列表项功能(如超出索引，则无响应，待优化)
+
 ![remove](/homework/asset/homeworkImage_3/remove.png)
